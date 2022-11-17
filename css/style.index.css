@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+
  *{
     margin: 0;
     padding: 0;
@@ -14,24 +17,30 @@
   }
  :root{
         --main-font:'Hind', sans-serif;
+        --hero-font:'Archivo Black', sans-serif;
         --background1-color:#FFFFFF;
-        --bakground2-color:#E5E5E5;
+        --background2-color:#E5E5E5;
         --hero-color:#FCA311;
         --text-color:#000000;
         --decoration-color:#14213D;
+        
  }
  html{
   scroll-behavior:smooth;
  }
+
+
+ /*INICIO DE LA SECCIÓN HERO*/
  .jumbotron{
      width: 100%;
      height: 100vh;
-     background-color:var(--background1-color);
+     background-color:var(--background2-color);
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: space-between;
  }
+
 
  /*CARRUSEL DE FOTOS DE INSTAGRAM CON BOTONES PARA PASA PÁGINA*/
  .main-scroll-div{
@@ -102,7 +111,7 @@
 margin: 20px;
 height:50px;
 width: 50px;
-background-color: transparent;
+background-color: var(--background1-color);
 border: 4px solid  #14213D;
 border-radius: 40%;
 cursor: pointer;
@@ -171,10 +180,15 @@ transition: 0.1s;
    animation-delay: 3s;
    font-size: 0.6em;
    border: 3.5px solid #14213D;
-   padding: 2px 30px;
+   padding: 2px 40px;
    margin-top: 100px;
    border-radius: 100px;
    color: var(--hero-color);
+   background-color: var(--background1-color);
+   transition: 0.2s;
+}
+.word-7:hover{
+  padding:2px 20px;
 }
  @keyframes hero-animation{
    from{
@@ -196,14 +210,19 @@ transition: 0.1s;
 }
 /*FIN DE LA EDICION DE PALABRAS*/
 
+/*FIN DE LA SECCIÓN HERO*/
+
+
+
+
 /*INICIO DE LA SECCIÓN DE SKILLS*/
 
 .skills{
   width: 100%;
   height: 100vh;
-  background-color: #14213d;
+  background-color: var(--decoration-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 .skills .decoracion-left{
   height: 100%;
@@ -221,7 +240,7 @@ transition: 0.1s;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 50px;
 }
 .container-logos{
@@ -248,11 +267,44 @@ transition: 0.1s;
   margin-bottom: 50px;
 }
 .container-descripcion p{
-  color: var(--bakground2-color);
+  color: var(--background2-color);
   font-family: var(--main-font);
   text-align: center;
   font-size: 1.5em;
 }
 .keyword{
   color:var(--hero-color);
+}
+
+/*FIN DE LA SECCIÓN DE SKILLS*/
+
+
+
+/*INICIO DE LA SECCIÓN DE CONTACT*/
+
+.contact{
+  width: 100%;
+  height: 40vh;
+  background-color: var(--decoration-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactme {
+  color: var(--background2-color);
+  font-size: 5em;
+  font-family: var(--hero-font);
+}
+.contactme-links{
+  color: white;
+  width: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.contactme-links a{
+  text-decoration: none;
+  color:white;
+  font-family: var(--main-font);
+  display: inline-block;
 }
