@@ -40,7 +40,28 @@
      align-items: center;
      justify-content: space-between;
  }
+/*INICIO DEL NEAVEGADOR*/
+ .container-navegador{
+  margin-left: auto;
+  margin-right: 10%;
+  margin-top: 15px;
+ }
+ .container-navegador ul{
+  display: flex;
+  list-style: none;
+  color: var(--decoration-color);
+  font-family: var(--main-font);
 
+ }
+ .container-navegador ul li a{
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-family: var(--main-font);
+  color: var(--hero-color);
+  font-size: 1.2em;
+  font-weight: 500;
+ }
 
  /*CARRUSEL DE FOTOS DE INSTAGRAM CON BOTONES PARA PASA PÁGINA*/
  .main-scroll-div{
