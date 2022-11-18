@@ -45,6 +45,9 @@
   margin-left: auto;
   margin-right: 10%;
   margin-top: 15px;
+  opacity: 0;
+  animation: hero-animation-left 1.5s forwards;
+  animation-delay: 3s;
  }
  .container-navegador ul{
   display: flex;
@@ -227,6 +230,15 @@ transition: 0.1s;
  to{
      opacity: 1;
      transform:translateY(-50px)
+ }
+}
+@keyframes hero-animation-left{
+  from{
+     opacity: 0;
+ }
+ to{
+     opacity: 1;
+     transform:translateX(-50px)
  }
 }
 /*FIN DE LA EDICION DE PALABRAS*/
