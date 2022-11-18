@@ -317,7 +317,7 @@ transition: 0.1s;
 
 .contact{
   width: 100%;
-  height: 40vh;
+  height: 200px;
   background-color: var(--decoration-color);
   display: flex;
   flex-direction: column;
@@ -340,4 +340,24 @@ transition: 0.1s;
   color:white;
   font-family: var(--main-font);
   display: inline-block;
+}
+/*FIM DE LA SECCIÓN CONTACT*/
+
+
+/*INICIO DEL FOOTER*/
+
+footer{
+  width: 100%;
+  height: 100px;
+  background-color:var(--background2-color);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+footer p{
+  font-family: var(--main-font);
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1em;
+
 }
