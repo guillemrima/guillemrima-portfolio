@@ -372,4 +372,7 @@ footer p{
 .main-scroll-div{
 width: 50%;
 }
+.jumbotron .container h1{
+  font-size: 1.5em;
+}
 }
