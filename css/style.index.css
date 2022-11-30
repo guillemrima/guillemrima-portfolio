@@ -361,3 +361,15 @@ footer p{
   font-size: 1em;
 
 }
+
+@media screen and (max-width: 700px ) {
+.container-navegador{
+  display: none;
+}
+.skills{
+  display: none;
+} 
+.main-scroll-div{
+  width: 300px;
+}
+}
