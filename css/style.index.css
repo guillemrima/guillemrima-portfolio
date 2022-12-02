@@ -371,7 +371,7 @@ footer p{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
 }
 .container-navegador{
   margin-left: 140px;
@@ -447,7 +447,7 @@ footer p{
   
 }
 .jumbotron .container{
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .jumbotron .container h1{
   font-size: 1.5em;
