@@ -31,7 +31,10 @@
   scroll-behavior:smooth;
  }
 
-
+ html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
  /*INICIO DE LA SECCIÓN HERO*/
  .jumbotron{
      width: 100%;
@@ -70,7 +73,7 @@
 
  /*CARRUSEL DE FOTOS DE INSTAGRAM CON BOTONES PARA PASA PÁGINA*/
  .main-scroll-div{
-   margin-top: 20px;
+   margin-top: 10px;
    width: 400px;
    height: 500px;
    display: flex;
@@ -353,15 +356,6 @@ footer p{
 }
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 700px ) {
   .jumbotron{
     width: 100%;
@@ -371,7 +365,6 @@ footer p{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 30px;
 }
 .container-navegador{
   margin-left: 140px;
@@ -394,7 +387,6 @@ footer p{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-
 }
 .container-logos{
   width:100%;
@@ -404,7 +396,6 @@ footer p{
   grid-gap:20px;
   align-items: center;
   justify-items: center;
-
 }
 .container-logos .logo{
   width: 70px;
@@ -414,7 +405,6 @@ footer p{
   font-family: var(--main-font);
   text-align: center;
   width: 100%;
-
 }
 .container-descripcion p{
   font-family: var(--main-font);
@@ -422,6 +412,7 @@ footer p{
   font-size: 1.1em;
 }
 .main-scroll-div{
+  margin-top: -50px;
   width: 200px;
   height: 50px;
   display: flex;
@@ -430,6 +421,7 @@ footer p{
   opacity: 0;
   animation: hero-animation 1.5s forwards;
   animation-delay: 3s;
+
 }
 .cover{
   position: relative;
@@ -438,6 +430,7 @@ footer p{
   -webkit-box-shadow: 0px 0px 38px -12px rgba(20,33,61,1);
   -moz-box-shadow: 0px 0px 38px -12px rgba(20,33,61,1);
   box-shadow: 0px 0px 38px -12px rgba(20,33,61,1);
+  
  }
  .child{
   min-width: 200px;
@@ -447,7 +440,7 @@ footer p{
   
 }
 .jumbotron .container{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .jumbotron .container h1{
   font-size: 1.5em;
