@@ -257,18 +257,6 @@ transition: 0.1s;
   display: flex;
   justify-content: center;
 }
-.skills .decoracion-left{
-  height: 100%;
-  width: 300px;;
-  clip-path: polygon(0 0, 0 100%, 100% 100%);
-  background-color: var(--hero-color);
-}
-.skills .decoracion-right{
-  height: 100%;
-  width: 300px;
-  clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  background-color: var(--hero-color);
-}
 .skills .container{
   display: flex;
   flex-direction: column;
@@ -362,15 +350,76 @@ footer p{
 
 }
 
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 700px ) {
+  .jumbotron{
+    width: 100%;
+    height: 100vh;
+    background-color:var(--background2-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
 .container-navegador{
-  display: none;
+  margin-left: 140px;
+  opacity: 0;
+  animation: hero-animation-left 1.5s forwards;
+  animation-delay: 3s;
 }
 .skills{
-  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: var(--decoration-color);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 } 
+.skills .container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid red;
+}
+.container-logos{
+  width:100%;
+  height: 30vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:20px;
+  align-items: center;
+  justify-items: center;
+  border: 2px solid yellow;
+}
+.container-logos .logo{
+  width: 70px;
+  height:100px;
+}
+.container-descripcion{
+  font-family: var(--main-font);
+  text-align: center;
+  width: 100%;
+  border: 2px solid blueviolet;
+}
+.container-descripcion p{
+  font-family: var(--main-font);
+  text-align: center;
+  font-size: 1.1em;
+}
 .main-scroll-div{
-  margin-top:250px;
   width: 200px;
   height: 50px;
   display: flex;
@@ -400,5 +449,10 @@ footer p{
 }
 .jumbotron .container h1{
   font-size: 1.5em;
+}
+.contactme {
+  color: var(--background2-color);
+  font-size: 2.8em;
+  font-family: var(--hero-font);
 }
 }
